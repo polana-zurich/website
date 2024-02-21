@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>POLANA Zurich</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/board.css">
+</head>
+
+<body>
+	<nav>
+		<a class="logo" href="index.html" title="POLANA - Home"></a>
+		<a href="#" class="navbarbutton">About us</a>
+		<a href="board.html" class="navbarbutton">Board</a>
+		<a href="#" class="navbarbutton">Events</a>
+		<a href="#" class="navbarbutton">Photos</a>
+		<a href="https://instagram.com/polana.zurich" class="instagram"></a>
+		<div class="mobile-button-open" onclick="showMenu()">...</div>
+		<div class="mobile-bar mobile-menu-item">
+			<div class="mobile-button-close mobile-menu-item" onclick="hideMenu()">X</div>
+			<a href="#" class="navbarbutton-mobile mobile-menu-item">About us</a>
+			<a href="board.html" class="navbarbutton-mobile mobile-menu-item">Board</a>
+			<a href="#" class="navbarbutton-mobile mobile-menu-item">Events</a>
+			<a href="#" class="navbarbutton-mobile mobile-menu-item">Photos</a>
+		</div>
+	</nav>
+	
+	<p>
+		The board (as of February 19, 2024) consists of:
+		<ul>
+			<li></li>
+		</ul>
+	</p>
+</body>
+
+<script>
+	function showMenu(){
+		var nav = document.getElementsByClassName("mobile-menu-item");
+		for(var i=0; i<6; i++){
+			nav[i].style.right = "0px";
+		}
+	}
+	
+	function hideMenu(){
+		var nav = document.getElementsByClassName("mobile-menu-item");
+		for(var i=0; i<6; i++){
+			nav[i].style.right = "-200px";
+		}
+	}
+</script>
+
+</html>
