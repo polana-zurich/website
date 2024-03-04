@@ -1,0 +1,17 @@
+h1 {
+	padding-left: 20px;
+}
+
+.no-upcoming-events {
+	padding-left: 40px;
+	/* COMMENT OUT THE LINE BELOW IF THERE ARE NO UPCOMING EVENTS */
+	/* display: none; */
+}
+
+a {
+	text-decoration: none;
+}
+
+.content-main {
+	justify-content: flex-start;
+}
