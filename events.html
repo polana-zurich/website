@@ -12,18 +12,18 @@
 <body>
 	<nav>
 		<a class="logo" href="index.html" title="POLANA - Home"></a>
-		<a href="#" class="navbarbutton">About us</a>
+		<a href="aboutus.html" class="navbarbutton">About us</a>
 		<a href="board.html" class="navbarbutton">Board</a>
-		<a href="#" class="navbarbutton">Events</a>
-		<a href="#" class="navbarbutton">Photos</a>
+		<a href="events.html" class="navbarbutton">Events</a>
+		<a href="photos.html" class="navbarbutton">Photos</a>
 		<a href="https://instagram.com/polana.zurich" class="instagram"></a>
 		<div class="mobile-button-open" onclick="showMenu()">...</div>
 		<div class="mobile-bar mobile-menu-item">
 			<div class="mobile-button-close mobile-menu-item" onclick="hideMenu()">X</div>
-			<a href="#" class="navbarbutton-mobile mobile-menu-item">About us</a>
+			<a href="aboutus.html" class="navbarbutton-mobile mobile-menu-item">About us</a>
 			<a href="board.html" class="navbarbutton-mobile mobile-menu-item">Board</a>
-			<a href="#" class="navbarbutton-mobile mobile-menu-item">Events</a>
-			<a href="#" class="navbarbutton-mobile mobile-menu-item">Photos</a>
+			<a href="events.html" class="navbarbutton-mobile mobile-menu-item">Events</a>
+			<a href="photos.html" class="navbarbutton-mobile mobile-menu-item">Photos</a>
 		</div>
 	</nav>
 	
@@ -35,10 +35,59 @@
 		Currently, there are no events planned for the near future.
 	</p>
 	<h1>Past events</h1>
+	<!-- Images should ideally have dimensions 240x260 -->
+	<!-- TEMPLATE
+		<a href="events/yyyy/mm/eventname.html">
+			<li class="content-box hidden no-image" id="eventyyyymmeventname">
+				<p class="content-box-info hidden" additional="Read more >>">
+					Event Name
+				</p>
+			</li>
+		</a>
+	-->
 	<ul class="content-main">
+		<a href="events/2024/05/volleyball.html">
+			<li class="content-box hidden no-image" id="event202405volleyball">
+				<p class="content-box-info hidden" additional="Read more >>">
+					Volleyball May 2024
+				</p>
+			</li>
+		</a>
+		
+		<a href="events/2024/05/bbq.html">
+			<li class="content-box hidden no-image" id="event202405bbq">
+				<p class="content-box-info hidden" additional="Read more >>">
+					Barbecue at the lake
+				</p>
+			</li>
+		</a>
+		
+		<a href="events/2024/05/movienight.html">
+			<li class="content-box hidden" id="event202405movienight">
+				<p class="content-box-info hidden" additional="Read more >>">
+					Movie Night May 2024
+				</p>
+			</li>
+		</a>
+	
+		<a href="events/2024/04/liquortasting.html">
+			<li class="content-box hidden" id="event202404liquortasting">
+				<p class="content-box-info hidden" additional="Read more >>">
+					Liquor Tasting
+				</p>
+			</li>
+		</a>
+		
+		<a href="events/2024/03/easter.html">
+			<li class="content-box hidden no-image" id="event202403easter">
+				<p class="content-box-info hidden" additional="Read more >>">
+					Easter 2024
+				</p>
+			</li>
+		</a>
+		
 		<a href="events/2023/12/wigilia.html">
-			<li class="content-box">
-				<img src=".png">
+			<li class="content-box hidden no-image" id="event202312wigilia">
 				<p class="content-box-info hidden" additional="Read more >>">
 					Wigilia 2023
 				</p>
@@ -46,8 +95,7 @@
 		</a>
 	
 		<a href="events/2023/11/volleyball.html">
-			<li class="content-box">
-				<img src=".png">
+			<li class="content-box hidden no-image" id="event202311volleyball">
 				<p class="content-box-info hidden" additional="Read more >>">
 					Volleyball November 2023
 				</p>
@@ -55,8 +103,7 @@
 		</a>
 	
 		<a href="events/2023/10/sunday-lunch.html">
-			<li class="content-box">
-				<img src=".png">
+			<li class="content-box hidden no-image" id="event202310lunch">
 				<p class="content-box-info hidden" additional="Read more >>">
 					Sunday Lunch
 				</p>
@@ -64,8 +111,7 @@
 		</a>
 	
 		<a href="events/2023/10/general-assembly.html">
-			<li class="content-box">
-				<img src=".png">
+			<li class="content-box hidden" id="event202310ga">
 				<p class="content-box-info hidden" additional="Read more >>">
 					General Assembly Fall 2023
 				</p>
@@ -73,8 +119,7 @@
 		</a>
 		
 		<a href="events/2023/05/general-assembly.html">
-			<li class="content-box">
-				<img src=".png">
+			<li class="content-box hidden no-image" id="event202305ga">
 				<p class="content-box-info hidden" additional="Read more >>">
 					General Assembly Spring 2023
 				</p>
@@ -83,34 +128,7 @@
 	</ul>
 </body>
 
-<script>
-	function showMenu(){
-		var nav = document.getElementsByClassName("mobile-menu-item");
-		for(var i=0; i<6; i++){
-			nav[i].style.right = "0px";
-		}
-	}
-	
-	function hideMenu(){
-		var nav = document.getElementsByClassName("mobile-menu-item");
-		for(var i=0; i<6; i++){
-			nav[i].style.right = "-200px";
-		}
-	}
-	
-	// animation on scroll
-	const iobs = new IntersectionObserver((entries) => {
-		entries.forEach((entry) => {
-			if(entry.isIntersecting){
-				entry.target.classList.add('show');
-			} else {
-				entry.target.classList.remove('show');
-			}
-		});
-	});
-	
-	const hiddenElements = document.querySelectorAll('.hidden');
-	hiddenElements.forEach((element) => iobs.observe(element));
-</script>
+<script src="js/mobilemenu.js"></script>
+<script src="js/animationonscroll.js"></script>
 
 </html>

@@ -5,89 +5,84 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>POLANA Zurich</title>
-	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/board.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 	<nav>
 		<a class="logo" href="index.html" title="POLANA - Home"></a>
-		<a href="#" class="navbarbutton">About us</a>
+		<a href="aboutus.html" class="navbarbutton">About us</a>
 		<a href="board.html" class="navbarbutton">Board</a>
 		<a href="events.html" class="navbarbutton">Events</a>
-		<a href="#" class="navbarbutton">Photos</a>
+		<a href="photos.html" class="navbarbutton">Photos</a>
 		<a href="https://instagram.com/polana.zurich" class="instagram"></a>
 		<div class="mobile-button-open" onclick="showMenu()">...</div>
 		<div class="mobile-bar mobile-menu-item">
 			<div class="mobile-button-close mobile-menu-item" onclick="hideMenu()">X</div>
-			<a href="#" class="navbarbutton-mobile mobile-menu-item">About us</a>
+			<a href="aboutus.html" class="navbarbutton-mobile mobile-menu-item">About us</a>
 			<a href="board.html" class="navbarbutton-mobile mobile-menu-item">Board</a>
 			<a href="events.html" class="navbarbutton-mobile mobile-menu-item">Events</a>
-			<a href="#" class="navbarbutton-mobile mobile-menu-item">Photos</a>
+			<a href="photos.html" class="navbarbutton-mobile mobile-menu-item">Photos</a>
 		</div>
 	</nav>
 	
 	<h1>The board</h1>
 	<ul class="content-main">
-		<li class="content-box">
-			<p class="content-box-info hidden" additional="President">
-				Karol ?
+		<li class="content-box hidden no-image">
+			<p class="content-box-info" additional="President">
+				Karol Nowohoński
 			</p>
 		</li>
 		
-		<li class="content-box">
+		<li class="content-box hidden no-image">
 			<p class="content-box-info hidden" additional="Vice president">
 				Antoni Sarnecki
 			</p>
 		</li>
 		
-		<li class="content-box">
+		<li class="content-box hidden no-image">
 			<p class="content-box-info hidden" additional="Chief of Staff">
-				Krystian Skowron
+				Jędrzej Cader
 			</p>
 		</li>
 		
-		<li class="content-box">
+		<li class="content-box hidden no-image">
 			<p class="content-box-info hidden" additional="Treasurer">
-				Yan Sokal
+				Jan Sokal
 			</p>
 		</li>
 		
-		<li class="content-box">
+		<li class="content-box hidden no-image">
 			<p class="content-box-info hidden" additional="Social Media Manager">
 				Paweł Golla
 			</p>
 		</li>
 		
-		<li class="content-box">
+		<li class="content-box hidden no-image">
 			<p class="content-box-info hidden" additional="Graphic Designer">
-				Gosia ?
+				Małgorzata Synak
 			</p>
 		</li>
 		
-		<li class="content-box">
+		<li class="content-box hidden no-image">
 			<p class="content-box-info hidden" additional="Event Manager">
-				Bartek ?
-			</p>
-		</li>
-		<li class="content-box">
-			<p class="content-box-info hidden" additional="Event Manager">
-				Jędrzej Cader
+				Bartek Sobieraj
 			</p>
 		</li>
 		
-		<li class="content-box">
+		<li class="content-box hidden no-image">
 			<p class="content-box-info hidden" additional="Event and Sponsoring Manager">
 				Jakub Kosior
 			</p>
 		</li>
-		<li class="content-box">
+		<li class="content-box hidden no-image">
 			<p class="content-box-info hidden" additional="IT Manager">
 				Maciej Byczko
 			</p>
 		</li>
 		
-		<li class="content-box">
+		<li class="content-box hidden no-image">
 			<p class="content-box-info hidden" additional="IT Manager">
 				Jakub Potempa
 			</p>
@@ -96,34 +91,7 @@
 
 </body>
 
-<script>
-	function showMenu(){
-		var nav = document.getElementsByClassName("mobile-menu-item");
-		for(var i=0; i<6; i++){
-			nav[i].style.right = "0px";
-		}
-	}
-	
-	function hideMenu(){
-		var nav = document.getElementsByClassName("mobile-menu-item");
-		for(var i=0; i<6; i++){
-			nav[i].style.right = "-200px";
-		}
-	}
-	
-	// animation on scroll
-	const iobs = new IntersectionObserver((entries) => {
-		entries.forEach((entry) => {
-			if(entry.isIntersecting){
-				entry.target.classList.add('show');
-			} else {
-				entry.target.classList.remove('show');
-			}
-		});
-	});
-	
-	const hiddenElements = document.querySelectorAll('.hidden');
-	hiddenElements.forEach((element) => iobs.observe(element));
-</script>
+<script src="js/mobilemenu.js"></script>
+<script src="js/animationonscroll.js"></script>
 
 </html>

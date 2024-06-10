@@ -8,6 +8,10 @@ body {
 	overflow-x: hidden;
 }
 
+h1 {
+	padding-left: 20px;
+}
+
 .logo {
 	background-image: url(../images/logo_new.png);
 	width: 197px;
@@ -77,6 +81,7 @@ nav {
 		background-color: #b40000;
 		transition: 0.5s ease-in;
 		align-items: center;
+		z-index: 2137;
 	}
 	
 	.mobile-button-open, .mobile-button-close {
@@ -113,6 +118,7 @@ nav {
 	.mobile-menu-item {
 		right: -200px;
 		transition: 0.5s ease-in;
+		display: none;
 	}
 	
 	.navbarbutton-mobile {
@@ -194,4 +200,31 @@ nav {
 
 .show {
 	opacity: 1;
+}
+
+.dropdown-link {
+	width: 81px;
+	display: none;
+}
+
+.dropdown-bar {
+	height: 100px;
+	width: 100%;
+	display: none;
+}
+
+.dropdown:hover~.dropdown-bar {
+	display: block;
+	height: 100px;
+	width: 100%;
+	margin-top: 100px;
+	transition: 0.5s;
+}
+
+.no-image {
+	background-image: url(../images/logo_new.png);
+	background-size: 240px;
+	background-repeat: no-repeat;
+	display: grid;
+	align-self: center;
 }

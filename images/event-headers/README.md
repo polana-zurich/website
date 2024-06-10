@@ -1,0 +1,1 @@
+This folder is used for larger images (360 px wide) used on the page of a particular event.

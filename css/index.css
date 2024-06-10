@@ -1,0 +1,45 @@
+.main-section {
+	position: relative;
+	z-index: 0;
+}
+
+.main-section img {
+	padding-top: 2px;
+	width: 100vw;
+}
+
+.main-section p {
+	padding-left: 40px;
+	color: #ffffff;
+	position: absolute;
+	font-size: 3vw;
+	bottom: 80px;
+}
+
+.main-section h1 {
+	padding-left: 40px;
+	color: #ffffff;
+	position: absolute;
+	font-size: 7vw;
+	top: 0px;
+}
+
+.main-section .aboutus {
+	padding-left: 40px;
+	color: #ffffff;
+	position: absolute;
+	font-size: 2vw;
+	bottom: 40px;
+}
+
+.main-section .events {
+	padding-left: 40px;
+	color: #ffffff;
+	position: absolute;
+	font-size: 2vw;
+	bottom: 0px;
+}
+
+.main-section a {
+	color: #ffffff;
+}

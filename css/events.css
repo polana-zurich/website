@@ -1,7 +1,3 @@
-h1 {
-	padding-left: 20px;
-}
-
 .no-upcoming-events {
 	padding-left: 40px;
 	/* COMMENT OUT THE LINE BELOW IF THERE ARE NO UPCOMING EVENTS */
@@ -14,4 +10,16 @@ a {
 
 .content-main {
 	justify-content: flex-start;
+}
+
+#event202310ga {
+	background-image: url(../images/event-posters/GA-Fall2023.jpg);
+}
+
+#event202404liquortasting {
+	background-image: url(../images/event-posters/LiquorTasting2024.png);
+}
+
+#event202405movienight {
+	background-image: url(../images/event-posters/MovieNight2024.png);
 }
