@@ -113,6 +113,8 @@ nav {
 	
 	.instagram {
 		display: none;
+		background-color: #b40000;
+		margin-left: 0;
 	}
 	
 	.mobile-menu-item {
