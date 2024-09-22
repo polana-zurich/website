@@ -160,6 +160,7 @@ nav {
 	border: 2px solid #c0c0c0;
 	border-radius: 25px;
 	overflow: hidden;
+	background-repeat: no-repeat;
 }
 
 .content-box-info {
