@@ -205,25 +205,6 @@ nav {
 	opacity: 1;
 }
 
-.dropdown-link {
-	width: 81px;
-	display: none;
-}
-
-.dropdown-bar {
-	height: 100px;
-	width: 100%;
-	display: none;
-}
-
-.dropdown:hover~.dropdown-bar {
-	display: block;
-	height: 100px;
-	width: 100%;
-	margin-top: 100px;
-	transition: 0.5s;
-}
-
 .no-image {
 	background-image: url(../images/logo_new.png);
 	background-size: 240px;
