@@ -38,7 +38,7 @@
 
 .gallery {
 	display: grid;
-	margin: 0 10vw;
+	padding: 0 10vw;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 10px;
 }
@@ -131,4 +131,33 @@
 	opacity: 0.9;
 	display: grid;
 	text-align: center;
+}
+
+.collapsible {
+	background-color: #b40000;
+	color:#fff;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	border-bottom: solid 2px #ffffff;
+	text-align: left;
+	font-size: 24px;
+	transition: 0.4s ease-out;
+	font-family: 'Raleway', Arial, Helvetica, Sans Serif;
+}
+
+.active, .collapsible:hover {
+	background-color: #900000;
+	transition: 0.4s ease-out;
+}
+
+.collapsible-content {
+  width: 100vw;
+  background-color: #f0f0f0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.7s ease-out;
+  font-family: 'Raleway', Arial, Helvetica, Sans Serif;
+  border-bottom: solid 2px #ffffff;
 }
