@@ -38,7 +38,7 @@ imgs.forEach(function(img){
 		if(currImg == 1){
 			leftBtn.style.display = "none";
 		}
-		if(currImg == imgs.length){
+		if(currImg == imgAmountCurrentSemester){
 			rightBtn.style.display = "none";
 		}
 		// img-count button
