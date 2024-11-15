@@ -1,7 +1,7 @@
 .no-upcoming-events {
 	padding-left: 40px;
 	/* COMMENT OUT THE LINE BELOW IF THERE ARE NO UPCOMING EVENTS */
-	display: none;
+	/* display: none; */
 }
 
 a {
@@ -30,4 +30,13 @@ a {
 
 #event202411sundaylunch {
 	background-image: url(../images/event-posters/SundayLunch-Fall2024.jpg);
+}
+
+.calendar {
+	display: flex;
+	flex-direction: column;
+}
+
+.calendar iframe {
+	align-self: center;
 }

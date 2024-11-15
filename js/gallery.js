@@ -1,5 +1,7 @@
 let imgs;
 let currImg;
+let semesterId;
+let imgAmountCurrentSemester;
 let semestergalleries = document.getElementsByClassName("gallery");
 for(var i = 0; i < semestergalleries.length; i++){
 	var currentSemester = semestergalleries[i];
@@ -15,8 +17,8 @@ for(var i = 0; i < semestergalleries.length; i++){
 imgs = document.querySelectorAll(".gallery-img");
 imgs.forEach(function(img){
 	img.onclick = function(){
-		var semesterId = img.parentElement.classList[0];
-		var imgAmountCurrentSemester = img.parentElement.childElementCount;
+		semesterId = img.parentElement.classList[0];
+		imgAmountCurrentSemester = img.parentElement.childElementCount;
 		currImg = Number(img.classList[1].substring(3,6));
 		let popup = document.createElement("div");
 		document.body.appendChild(popup);
@@ -31,8 +33,9 @@ imgs.forEach(function(img){
 		let rightBtn = document.createElement("div");
 		leftBtn.setAttribute("class", "lr-btn left-btn");
 		rightBtn.setAttribute("class", "lr-btn right-btn");
-		leftBtn.setAttribute("onclick", "prev(\"" + semesterId + "\", " + imgAmountCurrentSemester + ")");
-		rightBtn.setAttribute("onclick", "next(\"" + semesterId + "\", " + imgAmountCurrentSemester + ")");
+		leftBtn.setAttribute("onclick", "prev()");
+		rightBtn.setAttribute("onclick", "next()");
+		document.addEventListener("keydown", handleArrowKeyNavigation);
 		document.body.appendChild(leftBtn);
 		document.body.appendChild(rightBtn);
 		if(currImg == 1){
@@ -54,14 +57,15 @@ function closePopup(){
 	document.querySelector(".left-btn").remove();
 	document.querySelector(".right-btn").remove();
 	document.querySelector(".img-count").remove();
+	document.removeEventListener("keydown", handleArrowKeyNavigation);
 }
 
-function prev(semesterId, length){
+function prev(){
 	currImg = currImg - 1;
 	if(currImg == 1){
 		document.querySelector(".left-btn").style.display = "none";
 	}
-	if(currImg == length-1){
+	if(currImg == imgAmountCurrentSemester-1){
 		document.querySelector(".right-btn").style.display = "grid";
 	}
 	let popupImg = document.querySelector(".popup-img");
@@ -75,12 +79,12 @@ function prev(semesterId, length){
 	}
 	popupImg.setAttribute("src", "photo-gallery/" + semesterId + "/img" + newImgIndex + '.jpg');
 	let imgCount = document.querySelector(".img-count");
-	imgCount.innerHTML = currImg + '/' + length;
+	imgCount.innerHTML = currImg + '/' + imgAmountCurrentSemester;
 }
 
-function next(semesterId, length){
+function next(){
 	currImg = currImg + 1;
-	if(currImg == length){
+	if(currImg == imgAmountCurrentSemester){
 		document.querySelector(".right-btn").style.display = "none";
 	}
 	if(currImg == 2){
@@ -97,5 +101,16 @@ function next(semesterId, length){
 	}
 	popupImg.setAttribute("src", "photo-gallery/" + semesterId + "/img" + newImgIndex + '.jpg');
 	let imgCount = document.querySelector(".img-count");
-	imgCount.innerHTML = currImg + '/' + length;
+	imgCount.innerHTML = currImg + '/' + imgAmountCurrentSemester;
 }
+
+function handleArrowKeyNavigation(event){
+	if (event.key === 'ArrowLeft'){
+		if (currImg != 1)
+			prev(semesterId, imgAmountCurrentSemester);
+	}
+	if (event.key === 'ArrowRight'){
+		if (currImg != imgAmountCurrentSemester)
+			next(semesterId, imgAmountCurrentSemester);
+	}
+} 

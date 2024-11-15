@@ -217,7 +217,7 @@ nav {
 }
 
 footer {
-	height: 70px;
+	height: 120px;
 	width: 100%;
 	background-color: #f0f0f0;
 	display: flex;
@@ -234,5 +234,9 @@ footer {
 
 footer img {
 	width: auto;
+	margin-left: 10px;
+}
+
+.impulsfabriklogo {
 	margin-left: auto;
 }

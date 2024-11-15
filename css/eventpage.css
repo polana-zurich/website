@@ -38,3 +38,7 @@ img {
 	display: grid;
 	align-self: center;
 }
+
+footer img {
+	padding: 0;
+}
