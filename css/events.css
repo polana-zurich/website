@@ -1,7 +1,7 @@
 .no-upcoming-events {
 	padding-left: 40px;
 	/* COMMENT OUT THE LINE BELOW IF THERE ARE NO UPCOMING EVENTS */
-	/* display: none; */
+	display: none;
 }
 
 a {
@@ -30,6 +30,10 @@ a {
 
 #event202411sundaylunch {
 	background-image: url(../images/event-posters/SundayLunch-Fall2024.jpg);
+}
+
+#event202412wigilia {
+	background-image: url(../images/event-posters/wigilia2024.png);
 }
 
 .calendar {
