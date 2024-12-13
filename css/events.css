@@ -1,7 +1,7 @@
 .no-upcoming-events {
 	padding-left: 40px;
 	/* COMMENT OUT THE LINE BELOW IF THERE ARE NO UPCOMING EVENTS */
-	/* display: none; */
+	display: none;
 }
 
 a {
@@ -34,6 +34,10 @@ a {
 
 #event202412wigilia {
 	background-image: url(../images/event-posters/wigilia2024.png);
+}
+
+#event202503skiweekend {
+	background-image: url(../images/event-posters/SkiWeekend2025.jpg);
 }
 
 .calendar {
