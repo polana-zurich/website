@@ -13,7 +13,7 @@
 	color: #ffffff;
 	position: absolute;
 	font-size: 3vw;
-	bottom: 80px;
+	bottom: 10px;
 }
 
 .main-section h1 {
@@ -24,22 +24,6 @@
 	top: 0px;
 }
 
-.main-section .aboutus {
-	padding-left: 40px;
-	color: #ffffff;
-	position: absolute;
-	font-size: 2vw;
-	bottom: 40px;
-}
-
-.main-section .events {
-	padding-left: 40px;
-	color: #ffffff;
-	position: absolute;
-	font-size: 2vw;
-	bottom: 0px;
-}
-
-.main-section a {
+main a {
 	color: #ffffff;
 }
