@@ -256,4 +256,8 @@ footer img {
 		margin-left: 0;
 		height: 50%;
 	}
+	
+	.organisation-logos img {
+		height: 80%;
+	}
 }
