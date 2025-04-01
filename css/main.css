@@ -261,3 +261,19 @@ footer img {
 		height: 80%;
 	}
 }
+
+/*@media (prefers-color-scheme: dark) {
+	html {
+		color: #ffffff;
+		background-color: #1a1a1a;
+	}
+	
+	footer {
+		color: #ffffff;
+		background-color: #404040;
+	}
+	
+	.content-box {
+		border: 2px solid #505050;
+	}
+}*/
