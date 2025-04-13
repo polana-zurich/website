@@ -1,16 +1,31 @@
+// assumes no more than 1000 images per semester
+
 let imgs;
 let currImg;
 let semesterId;
 let imgAmountCurrentSemester;
 let semestergalleries = document.getElementsByClassName("gallery");
+
+let map = {} // map from semester to amount of images in that semester
+map['hs23'] = 54;
+map['fs24'] = 40;
+map['hs24'] = 50;
+map['fs25'] = 7;
+
 for(var i = 0; i < semestergalleries.length; i++){
 	var currentSemester = semestergalleries[i];
 	var currentSemesterId = currentSemester.classList[0];	
+		
+	for(var j = 1; j <= map[currentSemesterId]; j++){
+		let newImg = document.createElement("div");
+		newImg.setAttribute("class", "gallery-img img" + toThreeDigit(j));
+		currentSemester.appendChild(newImg);
+	}
 
 	imgs = currentSemester.getElementsByClassName("gallery-img");
+	
 	for(var j = 0; j < imgs.length; j++){
-		var classes = imgs[j].classList;
-		imgs[j].style.backgroundImage = "url(photo-gallery/" + currentSemesterId + "/" + classes[1] + '.jpg)';
+		imgs[j].style.backgroundImage = "url(photo-gallery/" + currentSemesterId + "/img" + toThreeDigit(j+1) + '.jpg)';
 	}
 }
 
@@ -69,14 +84,7 @@ function prev(){
 		document.querySelector(".right-btn").style.display = "grid";
 	}
 	let popupImg = document.querySelector(".popup-img");
-	let newImgIndex;
-	if(currImg < 10){
-		newImgIndex = '00' + currImg;
-	} else if(currImg < 100){
-		newImgIndex = '0' + currImg;
-	} else {
-		newImgIndex = currImg;
-	}
+	let newImgIndex = toThreeDigit(currImg);
 	popupImg.setAttribute("src", "photo-gallery/" + semesterId + "/img" + newImgIndex + '.jpg');
 	let imgCount = document.querySelector(".img-count");
 	imgCount.innerHTML = currImg + '/' + imgAmountCurrentSemester;
@@ -91,14 +99,7 @@ function next(){
 		document.querySelector(".left-btn").style.display = "grid";
 	}
 	let popupImg = document.querySelector(".popup-img");
-	let newImgIndex;
-	if(currImg < 10){
-		newImgIndex = '00' + currImg;
-	} else if(currImg < 100){
-		newImgIndex = '0' + currImg;
-	} else {
-		newImgIndex = currImg;
-	}
+	let newImgIndex = toThreeDigit(currImg);
 	popupImg.setAttribute("src", "photo-gallery/" + semesterId + "/img" + newImgIndex + '.jpg');
 	let imgCount = document.querySelector(".img-count");
 	imgCount.innerHTML = currImg + '/' + imgAmountCurrentSemester;
@@ -114,3 +115,13 @@ function handleArrowKeyNavigation(event){
 			next(semesterId, imgAmountCurrentSemester);
 	}
 } 
+
+function toThreeDigit(i){
+	if(i < 10){
+		return '00' + i;
+	} else if(i < 100){
+		return '0' + i;
+	} else {
+		return i;
+	}
+}
