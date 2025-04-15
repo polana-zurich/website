@@ -25,7 +25,7 @@ for(var i = 0; i < semestergalleries.length; i++){
 	imgs = currentSemester.getElementsByClassName("gallery-img");
 	
 	for(var j = 0; j < imgs.length; j++){
-		imgs[j].style.backgroundImage = "url(photo-gallery/" + currentSemesterId + "/img" + toThreeDigit(j+1) + '.jpg)';
+		imgs[j].style.backgroundImage = "url(photo-gallery/" + currentSemesterId + "/img" + toThreeDigit(j+1) + '.webp)';
 	}
 }
 
@@ -42,7 +42,7 @@ imgs.forEach(function(img){
 		popup.setAttribute("class", "popup");
 		popup.setAttribute("onclick", "closePopup()");
 		popupImg.setAttribute("class", "popup-img");
-		popupImg.setAttribute("src", 'photo-gallery/' + semesterId + '/' + img.classList[1] + '.jpg');
+		popupImg.setAttribute("src", 'photo-gallery/' + semesterId + '/' + img.classList[1] + '.webp');
 		// left and right buttons
 		let leftBtn = document.createElement("div");
 		let rightBtn = document.createElement("div");
@@ -85,7 +85,7 @@ function prev(){
 	}
 	let popupImg = document.querySelector(".popup-img");
 	let newImgIndex = toThreeDigit(currImg);
-	popupImg.setAttribute("src", "photo-gallery/" + semesterId + "/img" + newImgIndex + '.jpg');
+	popupImg.setAttribute("src", "photo-gallery/" + semesterId + "/img" + newImgIndex + '.webp');
 	let imgCount = document.querySelector(".img-count");
 	imgCount.innerHTML = currImg + '/' + imgAmountCurrentSemester;
 }
@@ -100,7 +100,7 @@ function next(){
 	}
 	let popupImg = document.querySelector(".popup-img");
 	let newImgIndex = toThreeDigit(currImg);
-	popupImg.setAttribute("src", "photo-gallery/" + semesterId + "/img" + newImgIndex + '.jpg');
+	popupImg.setAttribute("src", "photo-gallery/" + semesterId + "/img" + newImgIndex + '.webp');
 	let imgCount = document.querySelector(".img-count");
 	imgCount.innerHTML = currImg + '/' + imgAmountCurrentSemester;
 }

@@ -13,8 +13,8 @@ let impulsfabrik = document.createElement("img");
 let vseth = document.createElement("img");
 
 impulsfabrik.setAttribute("class", "impulsfabriklogo");
-impulsfabrik.setAttribute("src", "/images/Impulsfabrik_Logo_RGB_1.1.png");
-vseth.setAttribute("src", "/images/vseth_Logo_bunt.png");
+impulsfabrik.setAttribute("src", "/images/Impulsfabrik_Logo_RGB_1.1.webp");
+vseth.setAttribute("src", "/images/vseth_Logo_bunt.webp");
 
 organisationLogos.appendChild(impulsfabrik);
 organisationLogos.appendChild(vseth);

@@ -1,0 +1,31 @@
+.content-box:nth-child(1) {
+	background-image: url(../images/board-members/FS2025/KarolNowohonski.webp);
+}
+
+.content-box:nth-child(2) {
+	background-image: url(../images/board-members/HS2024/MaciejByczko.webp);
+}
+
+.content-box:nth-child(3) {
+	background-image: url(../images/board-members/HS2024/MichalOskedra.webp);
+}
+
+.content-box:nth-child(4) {
+	background-image: url(../images/board-members/HS2024/JanSokal.webp);
+}
+
+.content-box:nth-child(5) {
+	background-image: url(../images/board-members/HS2024/PawelGolla.webp);
+}
+
+.content-box:nth-child(6) {
+	background-image: url(../images/board-members/HS2024/AntoniDeskur.webp);
+}
+
+.content-box:nth-child(7) {
+	background-image: url(../images/board-members/HS2024/HubertJarosz.webp);
+}
+
+.content-box:nth-child(8) {
+	background-image: url(../images/board-members/HS2024/JakubPotempa.webp);
+}

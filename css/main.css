@@ -16,7 +16,7 @@ h1 {
 }
 
 .logo {
-	background-image: url(../images/logo_new.png);
+	background-image: url(../images/logo_new.webp);
 	width: 197px;
 	margin-right: 10px;
 	align-self: row;
@@ -54,14 +54,14 @@ nav {
 	width: 100px;
 	height: 100px;
 	background-color: #f0f0f0;
-	background-image: url(../images/instagram.png);
+	background-image: url(../images/instagram.webp);
 	background-size: 100px 100px;
 	transition: 0.4s ease-out;
 	margin-left: auto;
 }
 
 .instagram:hover {
-	background-image: url(../images/instagram-color.png);
+	background-image: url(../images/instagram-color.webp);
 }
 
 .mobile-button-open {
@@ -140,7 +140,7 @@ nav {
 }
 
 .no-image {
-	background-image: url(../images/logo_new.png);
+	background-image: url(../images/logo_new.webp);
 	background-size: 240px;
 	background-repeat: no-repeat;
 	display: grid;
