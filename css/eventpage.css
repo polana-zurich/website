@@ -42,3 +42,13 @@ img {
 footer img {
 	padding: 0;
 }
+
+.header-img {
+	width: 360px;
+}
+
+@media(max-width: 800px){
+	.header-img {
+		width: calc(100vw - 20px);
+	}
+}
