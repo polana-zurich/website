@@ -1,1 +1,1 @@
-This folder is used for 240x260 images used on the main events page.
+This folder is used for 480x520 images used on the main events page.

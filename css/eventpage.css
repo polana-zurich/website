@@ -44,7 +44,9 @@ footer img {
 }
 
 .header-img {
-	width: 360px;
+	max-width: 360px;
+	object-fit: contain;
+	margin-bottom: auto;
 }
 
 @media(max-width: 800px){

@@ -1,7 +1,7 @@
 .no-upcoming-events {
 	padding-left: 40px;
 	/* COMMENT OUT THE LINE BELOW IF THERE ARE NO UPCOMING EVENTS */
-	/* display: none; */
+	display: none;
 }
 
 a {
@@ -63,5 +63,10 @@ a {
 
 #event202505michalkowalczyklecture {
 	background-image: url(../images/event-posters/MichalKowalczyk2025.webp);
+	background-size: 240px 260px;
+}
+
+#event202509ga {
+	background-image: url(../images/event-posters/GA-Fall2025.webp);
 	background-size: 240px 260px;
 }
