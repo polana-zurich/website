@@ -1,0 +1,46 @@
+.content-box {
+    background-size: 240px;
+    background-repeat: no-repeat;
+    display: grid;
+    align-self: center;
+}
+
+.content-box:nth-child(1) {
+	background-image: url(../images/board-members/HS2025/HubertJarosz.webp);
+}
+
+.content-box:nth-child(2) {
+	background-image: url(../images/board-members/HS2025/BartoszSobieraj.webp);
+}
+
+.content-box:nth-child(3) {
+	background-image: url(../images/board-members/HS2025/MichalOskedra.webp);
+}
+
+.content-box:nth-child(4) {
+	background-image: url(../images/board-members/HS2025/JakubKosior.webp);
+}
+
+.content-box:nth-child(5) {
+	background-image: url(../images/board-members/HS2025/EwaSokolowska.webp);
+}
+
+.content-box:nth-child(6) {
+	background-image: url(../images/board-members/HS2025/AntoniDeskur.webp);
+}
+
+.content-box:nth-child(7) {
+	background-image: url(../images/board-members/HS2025/JedrzejCader.webp);
+}
+
+.content-box:nth-child(8) {
+	background-image: url(../images/board-members/HS2025/JanSokal.webp);
+}
+
+.content-box:nth-child(9) {
+	background-image: url(../images/board-members/HS2025/MateuszJaworski.webp);
+}
+
+.content-box:nth-child(10) {
+	background-image: url(../images/board-members/HS2025/JakubPotempa.webp);
+}
