@@ -1,7 +1,7 @@
 .no-upcoming-events {
 	padding-left: 40px;
 	/* COMMENT OUT THE LINE BELOW IF THERE ARE NO UPCOMING EVENTS */
-	/* display: none; */
+	display: none;
 }
 
 a {
@@ -73,5 +73,10 @@ a {
 
 #event202510boardgamenight {
 	background-image: url(../images/event-posters/BoardGameNight-Fall2025.webp);
+	background-size: 240px 260px;
+}
+
+#event202511volleyball {
+	background-image: url(../images/event-posters/Volleyball2025.webp);
 	background-size: 240px 260px;
 }
