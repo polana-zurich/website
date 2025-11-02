@@ -20,3 +20,27 @@ h1 {
 .board-history-button:hover {
 	background-color: #a00000;
 }
+
+.flipped {
+	transform: rotateY(180deg);
+}
+
+.flipped .content-box-info {
+	height: 300px;
+	transform: rotateY(-180deg);
+}
+
+.flipped .content-box-info::after {
+	content:attr(extended);
+	white-space: pre-line;
+}
+
+.flipped:hover .content-box-info {
+	height: 300px;
+	transform: rotateY(-180deg);
+}
+
+.flipped:hover .content-box-info::after {
+	content:attr(extended);
+	white-space: pre-line;
+}

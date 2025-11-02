@@ -122,6 +122,7 @@ nav {
 
 .content-box:hover .content-box-info:after {
 	content: attr(additional);
+	white-space: pre-line;
 }
 
 .hidden {
