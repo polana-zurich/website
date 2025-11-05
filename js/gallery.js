@@ -10,7 +10,8 @@ let map = {} // map from semester to amount of images in that semester
 map['hs23'] = 54;
 map['fs24'] = 40;
 map['hs24'] = 50;
-map['fs25'] = 7;
+map['fs25'] = 11;
+map['hs25'] = 13;
 
 for(var i = 0; i < semestergalleries.length; i++){
 	var currentSemester = semestergalleries[i];
