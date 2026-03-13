@@ -1,7 +1,7 @@
 .no-upcoming-events {
 	padding-left: 40px;
 	/* COMMENT OUT THE LINE BELOW IF THERE ARE NO UPCOMING EVENTS */
-	display: none;
+	/* display: none; */
 }
 
 a {
@@ -19,6 +19,10 @@ a {
 
 .content-main {
 	justify-content: flex-start;
+}
+
+.content-box {
+	background-size: 240px 260px;
 }
 
 #event202310ga {
@@ -63,35 +67,28 @@ a {
 
 #event202505michalkowalczyklecture {
 	background-image: url(../images/event-posters/MichalKowalczyk2025.webp);
-	background-size: 240px 260px;
 }
 
 #event202509ga {
 	background-image: url(../images/event-posters/GA-Fall2025.webp);
-	background-size: 240px 260px;
 }
 
 #event202510boardgamenight {
 	background-image: url(../images/event-posters/BoardGameNight-Fall2025.webp);
-	background-size: 240px 260px;
 }
 
 #event202511volleyball {
 	background-image: url(../images/event-posters/Volleyball2025.webp);
-	background-size: 240px 260px;
 }
 
 #event202512wigilia {
 	background-image: url(../images/event-posters/wigilia2025.webp);
-	background-size: 240px 260px;
 }
 
 #event202602skiweekend {
 	background-image: url(../images/event-posters/SkiWeekend2026.webp);
-	background-size: 240px 260px;
 }
 
 #event202602ga {
 	background-image: url(../images/event-posters/GA-Spring2026.webp);
-	background-size: 240px 260px;
 }

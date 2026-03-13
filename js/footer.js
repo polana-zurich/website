@@ -2,7 +2,7 @@ let footer = document.createElement("footer");
 
 let footerText = document.createElement("div");
 footerText.setAttribute("class", 'footer-text');
-footerText.innerHTML = '© 2025 POLANA Zürich';
+footerText.innerHTML = '© 2026 POLANA Zürich';
 footer.appendChild(footerText);
 
 let organisationLogos = document.createElement("div");
