@@ -25,6 +25,10 @@ a {
 	background-size: 240px 260px;
 }
 
+.no-image {
+	background-size: auto;
+}
+
 #event202310ga {
 	background-image: url(../images/event-posters/GA-Fall2023.webp);
 }

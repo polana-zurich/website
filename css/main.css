@@ -142,7 +142,8 @@ nav {
 
 .no-image {
 	background-image: url(../images/logo_new.webp);
-	background-size: 240px;
+	background-size: auto;
+	background-position: center 80px;
 	background-repeat: no-repeat;
 	display: grid;
 	align-self: center;
