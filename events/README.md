@@ -1,6 +1,16 @@
 To add a new event:
-- Create a new folder for the respective year and month, if no folder available already
+- Create a new folder in events/ for the respective year and month, if no folder available already
 - Copy and rename template.html
 - Change title, time, location, description
-- Create a link in events.html (template in comment)
-- Delete no-image class and add event poster (if there is one) in events.css
+- Add respective entry in events.json (template below)
+- Add event poster & header (if there is one) to the respective folder in images/ and link in events.css/ event website, respectively
+
+JSON TEMPLATE:
+[
+    "20YY",
+    "MM",
+    "eventname", // URL
+    "Title",
+    true, // noImage
+    "20YY-MM-DDTHH:MM:SS+01:00" // when should the event be moved to the "past events" tab?
+]

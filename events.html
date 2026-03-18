@@ -16,23 +16,10 @@
 <body>
 	<script src="/js/navbar.js"></script>
 
-	<!-- TODO: replace with javascript, json for events, automatic expiry -->
-
 	<!-- Images should ideally have dimensions 480x520 -->
-	<!-- TEMPLATE
-		<a href="events/yyyy/mm/eventname.html">
-			<li class="content-box hidden no-image" id="eventyyyymmeventname">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Event Name
-				</p>
-			</li>
-		</a>
-	-->
 
 	<h1>Upcoming events</h1>
-	<ul class="content-main">
-		
-	</ul>
+	<ul class="content-main upcoming-events"></ul>
 	<div class="no-upcoming-events">
 		Currently, there are no events planned for the near future.
 	</div>
@@ -43,229 +30,14 @@
 	</div>
 
 	<h1>Past events</h1>
-	<ul class="content-main">
-		<a href="events/2026/02/skiweekend.html">
-			<li class="content-box hidden" id="event202602skiweekend">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Ski Weekend 2026
-				</p>
-			</li>
-		</a>
-		
-		<a href="events/2026/02/general-assembly.html">
-			<li class="content-box hidden" id="event202602ga">
-				<p class="content-box-info hidden" additional="Read more >>">
-					General Assembly Spring 2026
-				</p>
-			</li>
-		</a>
+	<ul class="content-main past-events"></ul>
 
-		<a href="events/2025/12/wigilia.html">
-			<li class="content-box hidden" id="event202512wigilia">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Wigilia 2025
-				</p>
-			</li>
-		</a>
-
-		<a href="events/2025/11/volleyball.html">
-			<li class="content-box hidden" id="event202511volleyball">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Volleyball November 2025
-				</p>
-			</li>
-		</a>
-
-		<a href="events/2025/10/boardgamenight.html">
-			<li class="content-box hidden" id="event202510boardgamenight">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Board Game Night Fall 2025
-				</p>
-			</li>
-		</a>
-
-		<a href="events/2025/09/general-assembly.html">
-			<li class="content-box hidden" id="event202509ga">
-				<p class="content-box-info hidden" additional="Read more >>">
-					General Assembly Fall 2025
-				</p>
-			</li>
-		</a>
-
-		<a href="events/2025/05/michalkowalczyklecture.html">
-			<li class="content-box hidden" id="event202505michalkowalczyklecture">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Reverse Engineering: From Code to Clue
-				</p>
-			</li>
-		</a>
-		
-		<a href="events/2025/04/easter.html">
-			<li class="content-box hidden" id="event202504easter">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Easter 2025
-				</p>
-			</li>
-		</a>
-
-		<a href="events/2025/04/boardgamenight.html">
-			<li class="content-box hidden no-image" id="event202504boardgamenight">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Board Game Night Spring 2025
-				</p>
-			</li>
-		</a>
-	
-		<a href="events/2025/03/skiweekend.html">
-			<li class="content-box hidden" id="event202503skiweekend">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Ski Weekend 2025
-				</p>
-			</li>
-		</a>
-
-		<a href="events/2025/03/general-assembly.html">
-			<li class="content-box hidden" id="event202503ga">
-				<p class="content-box-info hidden" additional="Read more >>">
-					General Assembly Spring 2025
-				</p>
-			</li>
-		</a>
-		
-		<a href="events/2025/02/andrzejdraganlecture.html">
-			<li class="content-box hidden" id="event202502andrzejdraganlecture">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Prof. Andrzej Dragan Lecture
-				</p>
-			</li>
-		</a>
-		
-		<a href="events/2024/12/wigilia.html">
-			<li class="content-box hidden" id="event202412wigilia">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Wigilia 2024
-				</p>
-			</li>
-		</a>
-		
-		<a href="events/2024/11/sunday-lunch.html">
-			<li class="content-box hidden" id="event202411sundaylunch">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Sunday Lunch Fall 2024
-				</p>
-			</li>
-		</a>
-
-		<a href="events/2024/10/movienight.html">
-			<li class="content-box hidden no-image" id="event202410movienight">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Movie Night October 2024
-				</p>
-			</li>
-		</a>
-
-		<a href="events/2024/10/gross-aubrig-hike.html">
-			<li class="content-box hidden no-image" id="event202410hike">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Gross Aubrig Hike
-				</p>
-			</li>
-		</a>
-
-		<a href="events/2024/10/general-assembly.html">
-			<li class="content-box hidden" id="event202410ga">
-				<p class="content-box-info hidden" additional="Read more >>">
-					General Assembly Fall 2024
-				</p>
-			</li>
-		</a>
-		
-		<a href="events/2024/05/volleyball.html">
-			<li class="content-box hidden no-image" id="event202405volleyball">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Volleyball May 2024
-				</p>
-			</li>
-		</a>
-		
-		<a href="events/2024/05/bbq.html">
-			<li class="content-box hidden no-image" id="event202405bbq">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Barbecue at the lake
-				</p>
-			</li>
-		</a>
-		
-		<a href="events/2024/05/movienight.html">
-			<li class="content-box hidden" id="event202405movienight">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Movie Night May 2024
-				</p>
-			</li>
-		</a>
-	
-		<a href="events/2024/04/liquortasting.html">
-			<li class="content-box hidden" id="event202404liquortasting">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Liquor Tasting
-				</p>
-			</li>
-		</a>
-		
-		<a href="events/2024/03/easter.html">
-			<li class="content-box hidden no-image" id="event202403easter">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Easter 2024
-				</p>
-			</li>
-		</a>
-		
-		<a href="events/2023/12/wigilia.html">
-			<li class="content-box hidden no-image" id="event202312wigilia">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Wigilia 2023
-				</p>
-			</li>
-		</a>
-	
-		<a href="events/2023/11/volleyball.html">
-			<li class="content-box hidden no-image" id="event202311volleyball">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Volleyball November 2023
-				</p>
-			</li>
-		</a>
-	
-		<a href="events/2023/10/sunday-lunch.html">
-			<li class="content-box hidden no-image" id="event202310lunch">
-				<p class="content-box-info hidden" additional="Read more >>">
-					Sunday Lunch
-				</p>
-			</li>
-		</a>
-	
-		<a href="events/2023/10/general-assembly.html">
-			<li class="content-box hidden" id="event202310ga">
-				<p class="content-box-info hidden" additional="Read more >>">
-					General Assembly Fall 2023
-				</p>
-			</li>
-		</a>
-		
-		<a href="events/2023/05/general-assembly.html">
-			<li class="content-box hidden no-image" id="event202305ga">
-				<p class="content-box-info hidden" additional="Read more >>">
-					General Assembly Spring 2023
-				</p>
-			</li>
-		</a>
-	</ul>
+	<script src="/js/fetchEvents.js"></script>
 
 	<script src="/js/footer.js"></script>
 
 </body>
 
 <script src="js/mobilemenu.js"></script>
-<script src="js/animationonscroll.js"></script>
 
 </html>

@@ -1,0 +1,226 @@
+[
+    [
+        "2026",
+        "03",
+        "easter",
+        "Easter 2026",
+        false,
+        "2026-03-24T00:00:00+01:00"
+    ],
+    [
+        "2026",
+        "02",
+        "skiweekend",
+        "Ski Weekend 2026",
+        false,
+        "2026-03-03T00:00:00+01:00"
+    ],
+    [
+        "2026",
+        "02",
+        "general-assembly",
+        "General Assembly Spring 2026",
+        false,
+        "2026-02-26T00:00:00+01:00"
+    ],
+    [
+        "2025",
+        "12",
+        "wigilia",
+        "Wigilia 2025",
+        false,
+        "2025-12-07T00:00:00+01:00"
+    ],
+    [
+        "2025",
+        "11",
+        "volleyball",
+        "Volleyball November 2025",
+        false,
+        "2025-11-03T00:00:00+01:00"
+    ],
+    [
+        "2025",
+        "10",
+        "boardgamenight",
+        "Board Game Night Fall 2025",
+        false,
+        "2025-10-23T00:00:00+02:00"
+    ],
+    [
+        "2025",
+        "09",
+        "general-assembly",
+        "General Assembly Fall 2025",
+        false,
+        "2025-09-25T00:00:00+02:00"
+    ],
+    [
+        "2025",
+        "05",
+        "michalkowalczyklecture",
+        "Reverse Engineering: From Code to Clue",
+        false,
+        "2025-05-16T00:00:00+02:00"
+    ],
+    [
+        "2025",
+        "04",
+        "easter",
+        "Easter 2025",
+        false,
+        "2025-04-14T00:00:00+02:00"
+    ],
+    [
+        "2025",
+        "04",
+        "boardgamenight",
+        "Board Game Night Spring 2025",
+        true,
+        "2025-04-03T00:00:00+02:00"
+    ],
+    [
+        "2025",
+        "03",
+        "skiweekend",
+        "Ski Weekend 2025",
+        false,
+        "2025-03-25T00:00:00+01:00"
+    ],
+    [
+        "2025",
+        "03",
+        "general-assembly",
+        "General Assembly Spring 2025",
+        false,
+        "2025-03-06T00:00:00+01:00"
+    ],
+    [
+        "2025",
+        "02",
+        "andrzejdraganlecture",
+        "Prof. Andrzej Dragan Lecture",
+        false,
+        "2025-02-26T00:00:00+01:00"
+    ],
+    [
+        "2024",
+        "12",
+        "wigilia",
+        "Wigilia 2024",
+        false,
+        "2024-12-09T00:00:00+01:00"
+    ],
+    [
+        "2024",
+        "11",
+        "sunday-lunch",
+        "Sunday Lunch Fall 2024",
+        false,
+        "2024-11-11T00:00:00+01:00"
+    ],
+    [
+        "2024",
+        "10",
+        "movienight",
+        "Movie Night October 2024",
+        true,
+        "2024-10-27T00:00:00+02:00"
+    ],
+    [
+        "2024",
+        "10",
+        "gross-aubrig-hike",
+        "Gross Aubrig Hike",
+        true,
+        "2024-10-07T00:00:00+02:00"
+    ],
+    [
+        "2024",
+        "10",
+        "general-assembly",
+        "General Assembly Fall 2024",
+        false,
+        "2024-10-03T00:00:00+02:00"
+    ],
+    [
+        "2024",
+        "05",
+        "volleyball",
+        "Volleyball May 2024",
+        true,
+        "2024-05-27T00:00:00+02:00"
+    ],
+    [
+        "2024",
+        "05",
+        "bbq",
+        "Barbecue at the lake",
+        true,
+        "2024-05-20T00:00:00+02:00"
+    ],
+    [
+        "2024",
+        "05",
+        "movienight",
+        "Movie Night May 2024",
+        false,
+        "2024-05-17T00:00:00+02:00"
+    ],
+    [
+        "2024",
+        "04",
+        "liquortasting",
+        "Liquor Tasting",
+        false,
+        "2024-05-01T00:00:00+02:00"
+    ],
+    [
+        "2024",
+        "03",
+        "easter",
+        "Easter 2024",
+        true,
+        "2024-03-24T00:00:00+01:00"
+    ],
+    [
+        "2023",
+        "12",
+        "wigilia",
+        "Wigilia 2023",
+        true,
+        "2023-12-10T00:00:00+01:00"
+    ],
+    [
+        "2023",
+        "11",
+        "volleyball",
+        "Volleyball November 2023",
+        true,
+        "2023-11-20T00:00:00+01:00"
+    ],
+    [
+        "2023",
+        "10",
+        "sunday-lunch",
+        "Sunday Lunch Fall 2023",
+        true,
+        "2023-10-30T00:00:00+01:00"
+    ],
+    [
+        "2023",
+        "10",
+        "general-assembly",
+        "General Assembly Fall 2023",
+        false,
+        "2023-10-06T00:00:00+01:00"
+    ],
+    [
+        "2023",
+        "05",
+        "general-assembly",
+        "General Assembly Spring 2023",
+        true,
+        "2023-05-27T00:00:00+01:00"
+    ]
+]

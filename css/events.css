@@ -29,7 +29,7 @@ a {
 	background-size: auto;
 }
 
-#event202310ga {
+#event202310general-assembly {
 	background-image: url(../images/event-posters/GA-Fall2023.webp);
 }
 
@@ -41,11 +41,11 @@ a {
 	background-image: url(../images/event-posters/MovieNight2024.webp);
 }
 
-#event202410ga {
+#event202410general-assembly {
 	background-image: url(../images/event-posters/GA-Fall2024.webp);
 }
 
-#event202411sundaylunch {
+#event202411sunday-lunch {
 	background-image: url(../images/event-posters/SundayLunch-Fall2024.webp);
 }
 
@@ -61,7 +61,7 @@ a {
 	background-image: url(../images/event-posters/SkiWeekend2025.webp);
 }
 
-#event202503ga {
+#event202503general-assembly {
 	background-image: url(../images/event-posters/GA-Spring2025.webp);
 }
 
@@ -73,7 +73,7 @@ a {
 	background-image: url(../images/event-posters/MichalKowalczyk2025.webp);
 }
 
-#event202509ga {
+#event202509general-assembly {
 	background-image: url(../images/event-posters/GA-Fall2025.webp);
 }
 
@@ -93,6 +93,10 @@ a {
 	background-image: url(../images/event-posters/SkiWeekend2026.webp);
 }
 
-#event202602ga {
+#event202602general-assembly {
 	background-image: url(../images/event-posters/GA-Spring2026.webp);
+}
+
+#event202603easter {
+	background-image: url(../images/event-posters/wielkanoc2026.webp);
 }
