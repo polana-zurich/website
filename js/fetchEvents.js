@@ -2,8 +2,6 @@
     let response = await fetch("/events/events.json");
     let events = await response.json()
 
-    console.log(events);
-
     let upcomingEvents = document.getElementsByClassName("upcoming-events")[0];
     let pastEvents = document.getElementsByClassName("past-events")[0];
 
@@ -34,6 +32,7 @@
             li.setAttribute("class", "content-box hidden no-image");
         } else {
             li.setAttribute("class", "content-box hidden");
+            li.setAttribute("style", "background-image: url(/images/event-posters/" + curr[0] + curr[1] + curr[2] + ".webp)");
         }
         li.setAttribute("id", "event" + curr[0] + curr[1] + curr[2]);
         a.appendChild(li);
