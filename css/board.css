@@ -2,6 +2,10 @@ h1 {
 	text-align: center;
 }
 
+.content-box {
+	background-size: 240px;
+}
+
 .board-history-button {
 	background-color: #b40000;
 	margin: auto;
