@@ -3,7 +3,8 @@ To add a new event:
 - Copy and rename template.html
 - Change title, time, location, description
 - Add respective entry in events.json (template below)
-- Add event poster & header (if there is one) to the respective folder in images/ and link in events.css/ event website, respectively
+- Add event poster & header (if there is one) to the respective folder in images/ and comment out header image line on the event page
+- Add event to Google Calendar
 
 JSON TEMPLATE:
 [
