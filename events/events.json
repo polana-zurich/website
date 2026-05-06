@@ -1,6 +1,22 @@
 [
     [
         "2026",
+        "05",
+        "sunday-lunch",
+        "Sunday Lunch Spring 2026",
+        false,
+        "2026-05-10T20:00:00+02:00"
+    ],
+    [
+        "2026",
+        "05",
+        "summerbar",
+        "Summerbar 2026",
+        false,
+        "2026-05-08T00:00:00+02:00"
+    ],
+    [
+        "2026",
         "04",
         "party",
         "Polish Party",
