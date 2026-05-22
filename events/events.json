@@ -2,6 +2,14 @@
     [
         "2026",
         "05",
+        "birthday",
+        "POLANA Birthday",
+        false,
+        "2026-05-24T00:00:00+02:00"
+    ],
+    [
+        "2026",
+        "05",
         "sunday-lunch",
         "Sunday Lunch Spring 2026",
         false,
