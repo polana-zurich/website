@@ -12,6 +12,7 @@ map['fs24'] = 40;
 map['hs24'] = 50;
 map['fs25'] = 11;
 map['hs25'] = 13;
+map['fs26'] = 73;
 
 for(var i = 0; i < semestergalleries.length; i++){
 	var currentSemester = semestergalleries[i];
