@@ -1,6 +1,30 @@
 [
     [
         "2026",
+        "12",
+        "wigilia",
+        "Wigilia 2026",
+        true,
+        "2026-12-07T00:00:00+01:00"
+    ],
+    [
+        "2026",
+        "11",
+        "party",
+        "Pub Quiz/Karaoke",
+        true,
+        "2026-11-21T03:00:00+01:00" 
+    ],
+    [
+        "2026",
+        "10",
+        "boardgamenight",
+        "Board Game Night Fall 2026",
+        true, 
+        "2026-10-27T22:00:00+02:00"
+    ],
+    [
+        "2026",
         "09",
         "general-assembly",
         "General Assembly Fall 2026",

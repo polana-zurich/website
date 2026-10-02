@@ -54,6 +54,12 @@
         }
     }
 
+    // reverse order of upcoming events, such that closest event from now comes first, furthest comes last 
+    for (var i = 1; i < upcomingEvents.childNodes.length; i++) {
+        console.log(upcomingEvents.childNodes[i]);
+        upcomingEvents.insertBefore(upcomingEvents.childNodes[i], upcomingEvents.firstChild);
+    }
+
     // animation on scroll
 
     const iobs = new IntersectionObserver((entries) => {
