@@ -17,11 +17,27 @@
     ],
     [
         "2026",
+        "11",
+        "volleyball",
+        "Volleyball November 2026",
+        true,
+        "2026-11-14T18:00:00+01:00" 
+    ],
+    [
+        "2026",
         "10",
         "boardgamenight",
         "Board Game Night Fall 2026",
         true, 
         "2026-10-27T22:00:00+02:00"
+    ],
+    [
+        "2026",
+        "10",
+        "hike",
+        "Rheinschlucht Hike 2026",
+        false, 
+        "2026-10-18T18:00:00+02:00"
     ],
     [
         "2026",
